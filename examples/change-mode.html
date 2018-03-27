@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Chnage mode - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="../css/editormd.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
         <style>
@@ -33,7 +33,7 @@
     &lt;head&gt;
         &lt;meta charset="utf-8" /&gt;
         &lt;title&gt;Chnage mode - Editor.md examples&lt;/title&gt;
-        &lt;link rel="stylesheet" href="css/style.css" /&gt;
+        &lt;link rel="stylesheet" href="./css/style.css" /&gt;
         &lt;link rel="stylesheet" href="../css/editormd.css" /&gt;
         &lt;link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" /&gt;
     &lt;/head&gt;
@@ -46,11 +46,11 @@
                 &lt;textarea style="display:none;"&gt;&lt;/textarea&gt;
             &lt;/div&gt;
         &lt;/div&gt;
-        &lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
-        &lt;script src="../editormd.js"&gt;&lt;/script&gt;
+        &lt;script src="./js/jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src="../dist/editormd.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript"&gt;
             $(function() {
-                var testEditor = editormd("test-editormd", {
+                var testEditor = editormd()("test-editormd", {
                     width            : "90%",
                     height           : 720,
                     watch            : false,
@@ -68,7 +68,7 @@
     &lt;/body&gt;
 &lt;/html&gt;</textarea>
 <textarea id="javascript-code">$(function() {
-    var testEditor = editormd("test-editormd", {
+    var testEditor = editormd()("test-editormd", {
         width            : "90%",
         height           : 720,
         watch            : false,
@@ -418,8 +418,8 @@ if __name__ == '__main__':
                 <textarea style="display:none;"></textarea>
             </div>
         </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="../editormd.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="../dist/editormd.js"></script>
         <script type="text/javascript">
             var testEditor;
             
@@ -428,7 +428,7 @@ if __name__ == '__main__':
             }
             
             $(function() {
-                testEditor = editormd("test-editormd", {
+                testEditor = editormd()("test-editormd", {
                     width            : "90%",
                     height           : 720,
                     watch            : false,

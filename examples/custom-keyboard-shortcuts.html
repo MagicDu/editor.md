@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Custom keyboard shortcuts - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="../css/editormd.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
     </head>
@@ -21,7 +21,7 @@
 #### Example
 
 ```javascript
-var testEditor = editormd("test-editormd", {
+var testEditor = editormd()("test-editormd", {
     width: "90%",
     height: 720,
     path : '../lib/',
@@ -56,15 +56,15 @@ var testEditor = editormd("test-editormd", {
 </textarea>
             </div>
         </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="../editormd.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="../dist/editormd.js"></script>
         <script type="text/javascript">
 			var testEditor;
 
             $(function() {   
                 var widgets = [];
                 
-                testEditor = editormd("test-editormd", {
+                testEditor = editormd()("test-editormd", {
                     width: "90%",
                     height: 720,
                     path : '../lib/',

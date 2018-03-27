@@ -7,7 +7,7 @@ define(function(require){
     console.log($, editormd);
                 
     $.get("./test.md", function(md){
-        testEditor = editormd("test-editormd", {
+        testEditor = editormd()("test-editormd", {
             width: "90%",
             height: 640,
             path : '../lib/',

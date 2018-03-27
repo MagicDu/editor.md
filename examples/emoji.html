@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Emoji - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="../css/editormd.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
         <style>
@@ -156,8 +156,8 @@ This is an H1 :editormd-logo-4x: @pandao
 </textarea>
             </div>
         </div>        
-        <script src="js/jquery.min.js"></script>
-        <script src="../editormd.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="../dist/editormd.js"></script>
         <script type="text/javascript">
             var testEditor;
             
@@ -175,7 +175,7 @@ This is an H1 :editormd-logo-4x: @pandao
                     ext  : ".png"
                 };
                 
-                testEditor = editormd("test-editormd", {
+                testEditor = editormd()("test-editormd", {
                     width  : "90%",
                     height : 720,
                     toc : true,

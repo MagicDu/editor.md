@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Manually load modules - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
     </head>
     <body>
@@ -16,7 +16,7 @@
                 <textarea style="display:none;">#### Manually load modules exmaple
 
 ```html
-&lt;script src="js/jquery.min.js"&gt;&lt;/script&gt;
+&lt;script src="./js/jquery.min.js"&gt;&lt;/script&gt;
 &lt;link rel="stylesheet" href="../lib/codemirror/codemirror.min.css" /&gt;        
 &lt;link rel="stylesheet" href="../lib/codemirror/addon/dialog/dialog.css" /&gt; 
 &lt;link rel="stylesheet" href="../lib/codemirror/addon/search/matchesonscrollbar.css" /&gt; 
@@ -43,10 +43,10 @@
 &lt;script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"&gt;&lt;/script&gt;
 
 &lt;link rel="stylesheet" href="../css/editormd.css" /&gt;
-&lt;script src="../editormd.js"&gt;&lt;/script&gt;
+&lt;script src="../dist/editormd.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
 	$(function() {
-		var testEditor = editormd("test-editormd", {
+		var testEditor = editormd()("test-editormd", {
 			width  : "90%",
 			height : 720,
 			autoLoadModules : false  // Manually load modules
@@ -64,7 +64,7 @@ $$E = mc^2$$
             </div>
         </div>
         
-        <script src="js/jquery.min.js"></script>
+        <script src="./js/jquery.min.js"></script>
         <link rel="stylesheet" href="../lib/codemirror/codemirror.min.css" />        
         <link rel="stylesheet" href="../lib/codemirror/addon/dialog/dialog.css" />  
         <link rel="stylesheet" href="../lib/codemirror/addon/search/matchesonscrollbar.css" /> 
@@ -91,10 +91,10 @@ $$E = mc^2$$
         <script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
         
         <link rel="stylesheet" href="../css/editormd.css" />
-        <script src="../editormd.js"></script>
+        <script src="../dist/editormd.js"></script>
         <script type="text/javascript">
             $(function() {
-                var testEditor = editormd("test-editormd", {
+                var testEditor = editormd()("test-editormd", {
                     width           : "90%",
                     height          : 720,
                     path            : "../lib/",

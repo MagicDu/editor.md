@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>动态创建 Editor.md - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="../css/editormd.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
     </head>
@@ -20,7 +20,7 @@
             </header>
         </div>
         
-        <script src="js/jquery.min.js"></script> 
+        <script src="./js/jquery.min.js"></script> 
         <script type="text/javascript">
             var testEditormd;
             
@@ -29,7 +29,7 @@
 					$.getScript("../editormd.js", function() {
                         $("#layout").append("<div id=\"test-editormd\"></div>");
                         
-                        testEditormd = editormd("test-editormd", {
+                        testEditormd = editormd()("test-editormd", {
                             width: "90%",
                             height: 640,
                             markdown : "### 动态创建 Editor.md\r\n\r\nDynamic create Editor.md",

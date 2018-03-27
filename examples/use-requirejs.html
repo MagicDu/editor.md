@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Using require.js - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="../lib/codemirror/codemirror.min.css" /> 
         <!-- <link rel="stylesheet" href="../lib/codemirror/addon/fold/foldgutter.css" /> -->
         <link rel="stylesheet" href="../css/editormd.min.css" />
@@ -79,7 +79,7 @@
                 editormd.loadCSS("../lib/codemirror/addon/fold/foldgutter");
                 
                 $.get('test.md', function(md) {
-                    testEditor = editormd("test-editormd", {
+                    testEditor = editormd()("test-editormd", {
                         width: "90%",
                         height: 640,
                         path : '../lib/',

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Auto height - Editor.md examples</title>
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="../css/editormd.css" />
         <link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />
     </head>
@@ -19,31 +19,31 @@
                 <textarea style="display:none;">### Settings
 
 ```javascript
-var testEditor = editormd("test-editormd", {
+var testEditor = editormd()("test-editormd", {
     autoHeight : true
 });
 ```
 </textarea>
             </div>
         </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="../editormd.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="../dist/editormd.js"></script>
         <script type="text/javascript">
 			var testEditor;
 
             $(function() {
-                testEditor = editormd("test-editormd", {
+                testEditor = editormd()("test-editormd", {
                     width           : "90%",
                     autoHeight      : true,
                     path            : "../lib/",
-                    htmlDecode      : "style,script,iframe", 
+                    htmlDecode      : "style,script,iframe",
                     tex             : true,
                     emoji           : true,
                     taskList        : true,
-                    flowChart       : true, 
+                    flowChart       : true,
                     sequenceDiagram : true
                 });
-                
+
                 $("#append-btn").click(function(){
                     $.get("./test.md", function(md){
                         testEditor.appendMarkdown(md);
