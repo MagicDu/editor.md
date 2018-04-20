@@ -1884,6 +1884,15 @@
         newMarkdownDoc,
         settings.htmlDecode
       )
+      // FIXED marked.js render table structure with br tag inside, so this make it removed
+      function removeBrTagInTable(text) {
+          var tableRegex = /<table[^>]*(.|[\n\r])*?<\/table>/gim
+          text = text.replace(tableRegex, function($1, $2) {
+              return $1.replace(/<br>\s*/g, '')
+          })
+          return text
+      }
+      newMarkdownDoc = removeBrTagInTable(newMarkdownDoc)
       this.markdownTextarea.text(cmValue)
       cm.save()
       if (settings.saveHTMLToTextarea) {
@@ -3635,6 +3644,15 @@
       markdownParsed,
       settings.htmlDecode
     )
+    // FIXED marked.js render table structure with br tag inside, so this make it removed
+    function removeBrTagInTable(text) {
+        var tableRegex = /<table[^>]*(.|[\n\r])*?<\/table>/gim
+        text = text.replace(tableRegex, function($1, $2) {
+            return $1.replace(/<br>\s*/g, '')
+        })
+        return text
+    }
+    markdownParsed = removeBrTagInTable(markdownParsed)
     if (settings.markdownSourceCode) {
       saveTo.text(markdownDoc)
     } else {
