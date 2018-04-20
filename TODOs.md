@@ -2,6 +2,5 @@
 2. 处理上传图片接受的文件类型
 3. 增加粘贴图片上传功能 #524/#519
 4. 点击事件判断错误 #526
-5. 有序列表解析问题 #543
-6. 最新分支无法通过gulp正常生成 #513 finish
-7. on* 时类似 `<a href="javascript:alert('xxxx')"></a>` 会被解析的问题处理
+5. Could you please add a "check" if there is an element to bind "editor.md" on in DOM #553
+6. image-dialog.js syntax error #552
